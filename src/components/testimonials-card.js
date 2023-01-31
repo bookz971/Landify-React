@@ -1,30 +1,30 @@
-import { h } from 'preact'
+import React from 'react'
 
 import PropTypes from 'prop-types'
 
-import projectStyles from '../global-style.module.css'
-import styles from './testimonials-card.css'
+import projectStyles from '../style.module.css'
+import styles from './testimonials-card.module.css'
 
 const TestimonialsCard = (props) => {
   return (
-    <div class={styles['container']}>
+    <div className={styles['container']}>
       <img
         alt={props.image_alt}
         src={props.image_src}
-        class={styles['image']}
+        className={styles['image']}
       />
-      <div class={styles['container1']}>
+      <div className={styles['container1']}>
         <img
           alt={props.image_alt1}
           src={props.image_src1}
-          class={styles['image1']}
+          className={styles['image1']}
         />
-        <div class={styles['container2']}>
-          <span class={` ${styles['text']} ${projectStyles['lead1']} `}>
+        <div className={styles['container2']}>
+          <span className={` ${styles['text']} ${projectStyles['lead1']} `}>
             {props.text}
           </span>
-          <span class={projectStyles['subtitle1']}>{props.text1}</span>
-          <span class={` ${styles['text2']} ${projectStyles['lead2']} `}>
+          <span className={projectStyles['subtitle1']}>{props.text1}</span>
+          <span className={` ${styles['text2']} ${projectStyles['lead2']} `}>
             {props.text2}
           </span>
         </div>

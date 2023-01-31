@@ -1,21 +1,21 @@
-import { h } from 'preact'
+import React from 'react'
 
 import PropTypes from 'prop-types'
 
-import projectStyles from '../global-style.module.css'
-import styles from './stats-card.css'
+import projectStyles from '../style.module.css'
+import styles from './stats-card.module.css'
 
 const StatsCard = (props) => {
   return (
-    <div class={styles['container']}>
+    <div className={styles['container']}>
       <img
         alt={props.image_alt}
         src={props.image_src}
-        class={styles['image']}
+        className={styles['image']}
       />
-      <div class={styles['container1']}>
-        <h1 class={projectStyles['headline4']}>{props.number}</h1>
-        <span class={projectStyles['body1']}>{props.description}</span>
+      <div className={styles['container1']}>
+        <h1 className={projectStyles['headline4']}>{props.number}</h1>
+        <span className={projectStyles['body1']}>{props.description}</span>
       </div>
     </div>
   )

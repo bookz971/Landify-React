@@ -1,39 +1,36 @@
 {
-  "private": true,
   "name": "landify",
-  "version": "1.0.0",
-  "description": "A preact project generated based on a UIDL document",
-  "author": "teleporthq.io",
-  "scripts": {
-    "start": "per-env",
-    "start:production": "npm run -s serve",
-    "start:development": "npm run -s dev",
-    "build": "preact build --template src/index.html",
-    "dev": "preact watch --template src/index.html",
-    "lint": "eslint src",
-    "serve": "sirv build --port 8080 --cors --single"
-  },
-  "eslintConfig": {
-    "extends": "preact",
-    "ignorePatterns": [
-      "build/"
-    ]
+  "private": true,
+  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "version": "0.1.0",
+  "author": "teleportHQ",
+  "dependencies": {
+    "gatsby": "^3.6.2",
+    "gatsby-image": "^2.2.27",
+    "gatsby-plugin-offline": "^4.6.0",
+    "gatsby-plugin-postcss": "^4.6.0",
+    "gatsby-plugin-react-helmet": "^4.6.0",
+    "gatsby-plugin-sharp": "^3.6.0",
+    "gatsby-source-filesystem": "^3.6.0",
+    "gatsby-transformer-sharp": "^3.6.0",
+    "prop-types": "15.7.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0"
   },
   "devDependencies": {
-    "enzyme": "^3.10.0",
-    "enzyme-adapter-preact-pure": "^2.0.0",
-    "eslint": "^6.0.1",
-    "eslint-config-preact": "^1.1.0",
-    "jest": "^24.9.0",
-    "jest-preset-preact": "^1.0.0",
-    "preact-cli": "^3.3.5",
-    "sirv-cli": "1.0.3"
+    "prettier": "^1.19.1"
   },
-  "dependencies": {
-    "preact": "^10.3.2",
-    "preact-render-to-string": "^5.1.4",
-    "preact-router": "^3.2.1",
-    "react-helmet": "^6.1.0",
-    "prop-types": "15.7.2"
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   }
 }
