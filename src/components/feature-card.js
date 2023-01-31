@@ -1,19 +1,22 @@
-import React from 'react'
+import { h } from 'preact'
 
 import PropTypes from 'prop-types'
 
-import './feature-card.css'
+import projectStyles from '../global-style.module.css'
+import styles from './feature-card.css'
 
 const FeatureCard = (props) => {
   return (
-    <div className="feature-card-container">
+    <div class={styles['container']}>
       <img
         alt={props.image_alt}
         src={props.image_src}
-        className="feature-card-image"
+        class={styles['image']}
       />
-      <h5 className="feature-card-text Headline5">{props.card_title}</h5>
-      <span className="feature-card-text1">{props.text}</span>
+      <h5 class={` ${styles['text']} ${projectStyles['headline5']} `}>
+        {props.card_title}
+      </h5>
+      <span class={styles['text1']}>{props.text}</span>
     </div>
   )
 }

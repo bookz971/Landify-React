@@ -1,13 +1,16 @@
-import React from 'react'
+import { h } from 'preact'
 
 import PropTypes from 'prop-types'
 
-import './primary-button.css'
+import projectStyles from '../global-style.module.css'
+import styles from './primary-button.css'
 
 const PrimaryButton = (props) => {
   return (
-    <div className="primary-button-container">
-      <button className="primary-button-button MediumLabel button">
+    <div class={styles['container']}>
+      <button
+        class={` ${styles['button']} ${projectStyles['medium-label']} ${projectStyles['button']} `}
+      >
         {props.button}
       </button>
     </div>

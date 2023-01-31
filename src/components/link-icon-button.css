@@ -1,10 +1,10 @@
-.link-icon-button-container {
+.container {
   display: flex;
   position: relative;
   align-items: flex-start;
   flex-direction: column;
 }
-.link-icon-button-button {
+.button {
   color: var(--dl-color-purple-default);
   display: flex;
   transition: 0.3s;
@@ -14,7 +14,7 @@
   padding-right: 0px;
   flex-direction: row;
 }
-.link-icon-button-icon {
+.icon {
   fill: var(--dl-color-purple-default);
   width: 20px;
   align-self: center;

@@ -1,21 +1,21 @@
-import React from 'react'
+import { h } from 'preact'
 
 import PropTypes from 'prop-types'
 
-import './store-banner.css'
+import styles from './store-banner.css'
 
 const StoreBanner = (props) => {
   return (
-    <div className="store-banner-store-banner">
+    <div class={styles['store-banner']}>
       <img
         alt={props.image_alt1}
         src={props.image_src1}
-        className="store-banner-image"
+        class={styles['image']}
       />
       <img
         alt={props.image_alt}
         src={props.image_src}
-        className="store-banner-image1"
+        class={styles['image1']}
       />
     </div>
   )

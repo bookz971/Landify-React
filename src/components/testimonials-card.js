@@ -1,27 +1,32 @@
-import React from 'react'
+import { h } from 'preact'
 
 import PropTypes from 'prop-types'
 
-import './testimonials-card.css'
+import projectStyles from '../global-style.module.css'
+import styles from './testimonials-card.css'
 
 const TestimonialsCard = (props) => {
   return (
-    <div className="testimonials-card-container">
+    <div class={styles['container']}>
       <img
         alt={props.image_alt}
         src={props.image_src}
-        className="testimonials-card-image"
+        class={styles['image']}
       />
-      <div className="testimonials-card-container1">
+      <div class={styles['container1']}>
         <img
           alt={props.image_alt1}
           src={props.image_src1}
-          className="testimonials-card-image1"
+          class={styles['image1']}
         />
-        <div className="testimonials-card-container2">
-          <span className="testimonials-card-text Lead1">{props.text}</span>
-          <span className="Subtitle1">{props.text1}</span>
-          <span className="testimonials-card-text2 Lead2">{props.text2}</span>
+        <div class={styles['container2']}>
+          <span class={` ${styles['text']} ${projectStyles['lead1']} `}>
+            {props.text}
+          </span>
+          <span class={projectStyles['subtitle1']}>{props.text1}</span>
+          <span class={` ${styles['text2']} ${projectStyles['lead2']} `}>
+            {props.text2}
+          </span>
         </div>
       </div>
     </div>

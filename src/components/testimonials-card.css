@@ -1,4 +1,4 @@
-.testimonials-card-container {
+.container {
   flex: 0 0 auto;
   width: 100%;
   display: flex;
@@ -9,12 +9,12 @@
   flex-direction: column;
   background-color: var(--dl-color-gray-white);
 }
-.testimonials-card-image {
+.image {
   width: 100px;
   object-fit: cover;
   margin-bottom: var(--dl-space-space-doubleunit);
 }
-.testimonials-card-container1 {
+.container1 {
   flex: 0 0 auto;
   width: 100%;
   height: auto;
@@ -23,7 +23,7 @@
   flex-direction: row;
   justify-content: flex-start;
 }
-.testimonials-card-image1 {
+.image1 {
   top: 81px;
   left: 46px;
   right: auto;
@@ -31,15 +31,15 @@
   bottom: auto;
   object-fit: cover;
 }
-.testimonials-card-container2 {
+.container2 {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   justify-content: flex-start;
 }
-.testimonials-card-text {
+.text {
   margin-bottom: var(--dl-space-space-doubleunit);
 }
-.testimonials-card-text2 {
+.text2 {
   color: var(--dl-color-gray-700);
 }
